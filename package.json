@@ -1,0 +1,22 @@
+{
+  "name": "@jzetlen/create",
+  "version": "1.0.0",
+  "description": "zetlens private scaffolder",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetlen/create.git"
+  },
+  "keywords": [
+    "scaffold"
+  ],
+  "author": "zetlen <zetlen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zetlen/create/issues"
+  },
+  "homepage": "https://github.com/zetlen/create#readme"
+}

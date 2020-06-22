@@ -1,0 +1,37 @@
+{
+  "name": "@jzetlen/replaceme",
+  "version": "0.0.1",
+  "description": "a node module, description TBD",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier --loglevel warn --write \"./*.js\" && eslint --quiet --fix ./*.{js,json}",
+    "prepublishOnly": "npm run -s test",
+    "tap": "tap *.test.js",
+    "test": "npm run -s format && npm run -s tap -- --cov",
+    "test:dev": "chokidar --silent --polling --initial \"./*.js\" -c \"npm run -s test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetlen/replaceme.git"
+  },
+  "keywords": [
+  ],
+  "author": "zetlen <zetlen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zetlen/replaceme/issues"
+  },
+  "homepage": "https://github.com/zetlen/replacemet#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-package-json": "^0.1.4",
+    "prettier": "1.19.1",
+    "tap": "^14.10.7"
+  }
+}
